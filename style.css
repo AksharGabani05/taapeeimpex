@@ -231,7 +231,7 @@ a#skiptocontent:focus {
     display: none;
     color: #fff;
     z-index: 3;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: red;
     border-radius: 100%;
     text-align: center;
     line-height: 40px;
@@ -1424,6 +1424,31 @@ span.counter-icon {
     background-color: #3b3b3b;
 }
 
+@media (max-width: 768px) {
+    .homepage-video-wrapper .col-lg-10 {
+        width: 100%; /* Full width on mobile screens */
+        padding: 15px;
+    }
+
+    .homepage-video-wrapper .video-title,
+    .homepage-video-wrapper .video-subtitle {
+        font-size: 1.5rem; /* Adjust heading sizes */
+    }
+}
+
+@media (max-width: 576px) {
+    .homepage-video-wrapper .video-title,
+    .homepage-video-wrapper .video-subtitle {
+        font-size: 1.2rem; /* Smaller font for very small screens */
+    }
+
+    .wshipping-button {
+        font-size: 0.9rem; /* Adjust button size for smaller screens */
+        padding: 10px 15px;
+    }
+}
+
+
 /* about  */
 
 /* About Us Section Styling */
@@ -1774,7 +1799,7 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 75vh;
+    height: 95vh;
 }
 
 .contact-title {
@@ -1960,3 +1985,9 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.newbutton:hover{
+    color: white;
+    background-color: #026387;
+    text-decoration: none;
+
+}  
