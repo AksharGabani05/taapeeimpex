@@ -24,6 +24,11 @@ body.box-style .main-wrapper {
 a {
     outline: none;
 }
+.headingtitle{
+    font-weight: bold;
+    color: #026387 !important;
+    font-size:30px !important;
+}
 
 a,
 .logo,
@@ -87,50 +92,6 @@ h6 {
     font-size: 14px;
 }
 
-h2.heading2-border,
-h3.heading3-border,
-h4.heading4-border {
-    position: relative;
-    padding-bottom: 12px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-}
-
-h2.heading2-border {
-    font-weight: 500;
-}
-
-h3.heading3-border {
-    font-weight: 400;
-}
-
-h4.heading4-border {
-    font-weight: 400;
-}
-
-h2.heading2-border:before,
-h3.heading3-border:before,
-h4.heading4-border:before {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 20px;
-    height: 2px;
-    background-color: #a3001c;
-    content: "";
-}
-
-h2.heading2-border:after,
-h3.heading3-border:after,
-h4.heading4-border:after {
-    position: absolute;
-    left: 30px;
-    bottom: 0px;
-    width: 90px;
-    height: 2px;
-    background-color: #eb0028;
-    content: "";
-}
 
 /*-------------- important Css ------------------*/
 
@@ -223,20 +184,22 @@ a#skiptocontent:focus {
 /*-------------- Scroll Top Css ------------------*/
 
 .scrollup {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     bottom: 80px;
     right: 50px;
-    display: none;
+    display: flex;
     color: #fff;
     z-index: 3;
     background-color: red;
     border-radius: 100%;
-    text-align: center;
-    line-height: 40px;
     font-size: 18px;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.scrollup i{
+    color: #fff;
 }
 
 .scrollup:hover {
@@ -711,7 +674,7 @@ a#skiptocontent:focus {
 
 .why-choose-us .why-choose-us-icon {
     line-height: 56px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 10px 0px;
     position: relative;
     font-size: 18px;
@@ -736,15 +699,15 @@ a#skiptocontent:focus {
 .why-choose-us-icon i.fa,
 .why-choose-us-icon i.fas,
 .why-choose-us-icon i.far {
-    width: 56px;
-    height: 56px;
+    width: 50px;
+    height: 50px;
     background-color: #eb0028;
     border-radius: 100%;
     color: #fff;
     text-align: center;
     margin-right: 18px;
-    line-height: 56px;
-    font-size: 28px;
+    line-height: 50px;
+    font-size: 24px;
     position: relative;
     z-index: 1;
 }
@@ -947,7 +910,7 @@ a#skiptocontent:focus {
     position: absolute;
     left: 0px;
     top: 0px;
-    background: rgba(0, 0, 0, 0.9);
+    background: #026387;
 }
 
 .counter-block {
@@ -1351,17 +1314,26 @@ span.counter-icon {
 
 
 /* Wrapper styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
 .homepage-video-wrapper {
     position: relative;
     width: 100%;
     height: 80vh;
     overflow: hidden;
     background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2ZtdjBuYmR5d3JxNmo1cWo5MzVnM2p4YXdodmcyMXRybmw5MG5jdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OvDSH5lR0yKJF2SVWK/giphy.webp");
-    /* Background image */
     background-size: cover;
-    /* Ensure the image covers the entire section */
     background-position: center;
-    /* Center the background image */
 }
 
 /* Overlay styling */
@@ -1385,26 +1357,24 @@ span.counter-icon {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Black overlay with 50% opacity */
     z-index: -1;
-    /* Ensure it stays behind the overlay content */
 }
 
 .video-title {
-    font-size: 36px;
+    font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .video-subtitle {
-    font-size: 48px;
+    font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
 .video-overlay p {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -1413,42 +1383,59 @@ span.counter-icon {
     color: #fff;
     border-radius: 4px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 1rem;
     background-color: #eb0028;
     padding: 12px 30px;
     border: none;
     text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .wshipping-button:hover {
     background-color: #3b3b3b;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .video-title {
+        font-size: 2rem;
+    }
+    .video-subtitle {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .homepage-video-wrapper .col-lg-10 {
-        width: 100%; /* Full width on mobile screens */
-        padding: 15px;
+    .homepage-video-wrapper {
+        height: 60vh;
     }
-
-    .homepage-video-wrapper .video-title,
-    .homepage-video-wrapper .video-subtitle {
-        font-size: 1.5rem; /* Adjust heading sizes */
+    .video-title {
+        font-size: 1.8rem;
+    }
+    .video-subtitle {
+        font-size: 2rem;
+    }
+    .wshipping-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
     }
 }
 
 @media (max-width: 576px) {
-    .homepage-video-wrapper .video-title,
-    .homepage-video-wrapper .video-subtitle {
-        font-size: 1.2rem; /* Smaller font for very small screens */
+    .homepage-video-wrapper {
+        height: 50vh;
     }
-
+    .video-title {
+        font-size: 1.5rem;
+    }
+    .video-subtitle {
+        font-size: 1.8rem;
+    }
     .wshipping-button {
-        font-size: 0.9rem; /* Adjust button size for smaller screens */
-        padding: 10px 15px;
+        font-size: 0.8rem;
+        padding: 8px 15px;
     }
 }
-
-
 /* about  */
 
 /* About Us Section Styling */
@@ -1873,6 +1860,9 @@ textarea {
         padding: 0;
         margin-bottom: 30px;
     }
+    .contact-image img{
+        height: 50vh;
+    }
 
     .contact-title {
         font-size: 28px;
@@ -1885,6 +1875,7 @@ textarea {
     }
 }
 
+
 /* WhatsApp Button Style */
 .whatsapp-button {
     position: fixed;
@@ -1892,16 +1883,19 @@ textarea {
     bottom: 20px;  /* Distance from the bottom of the screen */
     background-color: #25d366;  /* WhatsApp green color */
     border-radius: 50%;
-    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;  /* Ensures it's above other content */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Font Awesome WhatsApp Icon Style */
 .whatsapp-button i {
     color: white;  /* Icon color */
-    font-size: 20px;/* Icon size */
+    font-size: 28px;/* Icon size */
 }
 
 /* Hover Effect */
@@ -1981,9 +1975,7 @@ textarea {
 
 
 
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 
 .newbutton:hover{
     color: white;
@@ -1991,3 +1983,81 @@ body{
     text-decoration: none;
 
 }  
+
+/* text heading  */
+
+h2.heading2-border,
+h3.heading3-border,
+h4.heading4-border {
+    position: relative;
+    padding-bottom: 12px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+h2.heading2-border {
+    font-weight: 500;
+}
+
+h3.heading3-border {
+    font-weight: 400;
+}
+
+h4.heading4-border {
+    font-weight: 400;
+}
+
+h2.heading2-border:before,
+h3.heading3-border:before,
+h4.heading4-border:before {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 20px;
+    height: 2px;
+    background-color: #026387;
+    content: "";
+}
+
+h2.heading2-border:after,
+h3.heading3-border:after,
+h4.heading4-border:after {
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
+    width: 90px;
+    height: 2px;
+    background-color: #026387;
+    content: "";
+}
+
+
+.home-testimonial{background-color: #026387;height: 380px}.home-testimonial-bottom{border-radius 0.3s, box-shadow 0.3s;margin-top: 20px;margin-bottom: 0px;position: relative;height: 130px;top: 190px}.home-testimonial h3{color: var(--orange);font-size: 14px;font-weight: 500;text-transform: uppercase}.home-testimonial h2{color: white;font-size: 28px;font-weight: 700}.testimonial-inner{position: relative;top: -174px}.testimonial-pos{position: relative;top: 24px}.testimonial-inner .tour-desc{border-radius: 5px;padding: 40px}.color-grey-3{font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2}.testimonial-inner img.tm-people{width: 60px;height: 60px;-webkit-border-radius: 50%;border-radius: 50%;-o-object-fit: cover;object-fit: cover;max-width: none}.link-name{font-family: "Montserrat", Sans-serif;font-size: 14px;color: #6c83a2}.link-position{font-family: "Montserrat", Sans-serif;font-size: 12px;color: #6c83a2}
+
+
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
