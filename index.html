@@ -1066,73 +1066,189 @@
     }
 </style>
 <footer class="site-footer">
-    <!-- Footer Top start -->
-    <section class="company-details">
+    <!-- Footer Top Start -->
+    <section class="footer-top-area">
         <div class="container">
             <div class="row">
-                <!-- Logo & About -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="company-logo">
-                        <img src="logo.png" alt="Company Logo" class="img-fluid" />
-                    </div>
-                    <div class="company-about">
+                <!-- About Company -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-wiz">
+                        <h3 class="footer-logo">Taapee Impex</h3>
                         <p class="tagline">Driving Global Success, One Shipment at a Time</p>
-                        <p>We are dedicated to providing reliable and efficient import-export services globally,
-                            ensuring timely deliveries and quality service every step of the way.</p>
+                        <p>We are dedicated to providing reliable and efficient import-export services globally, ensuring timely deliveries and quality service every step of the way.</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-wiz">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Wht-choose?</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Contact Information -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="contact-info">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-wiz">
                         <h3>Contact Information</h3>
-                        <ul class="contact-list">
-                            <li><i class="fa fa-phone"></i> <span>+91 7600617002</span></li>
-                            <li><i class="fa fa-envelope"></i> <span>info@taapeeimpex.com</span></li>
-                        </ul>
-                    </div>
-                    <div class="opening-hours">
-                        <h3>Opening Hours</h3>
-                        <ul>
-                            <li><span>Mon to Fri:</span> 09:30 AM - 05:30 PM</li>
-                            <li><span>Sun:</span> Closed</li>
+                        <ul class="footer-contact">
+                            <li><i class="fa fa-phone"></i> <a href="tel:+917600617002">+91 7600617002</a></li>
+                            <li><i class="fa fa-envelope"></i> <a href="mailto:info@taapeeimpex.com">info@taapeeimpex.com</a></li>
+                            <li><i class="fa fa-map-marker-alt"></i> 123 Business Avenue, Mumbai, India</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Social Media -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="social-media">
+                <!-- Newsletter & Social Media -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-wiz">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter for updates and news.</p>
+                        <div class="newsletter">
+                            <input type="email" class="news-input" placeholder="Your Email Address">
+                            <button class="news-btn"><i class="fa fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                    <div class="social-media"><br><br>
                         <h3>Follow Us</h3>
                         <div class="social-icons">
                             <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
                             <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon" title="YouTube"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Footer Top End -->
 
-
-    <!-- footer top end -->
-
-    <!-- copyright start -->
+    <!-- Footer Bottom Start -->
     <div class="footer-bottom-area">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 wow fadeInLeft">Copyright © 2024 <span>Taapee Impex </span>. All Rights
-                    Reserved</div>
-                <div class="col-12 col-lg-6 text-right wow fadeInRight">Design & Development By: <a
-                        href="http://gabaniakshar.pages.dev" title="web24service" target="_blank">Akshar Gabani</a>
-                </div>
+                <div class="col-12 col-lg-6">Copyright &copy; 2024 <span style="color: red;">Taapee Impex</span>. All Rights Reserved.</div>
+                <div class="col-12 col-lg-6 text-right">Design & Development By: <a href="http://gabaniakshar.pages.dev" target="_blank" title="web24service">Akshar Gabani</a></div>
             </div>
         </div>
     </div>
-    <!-- copyright end -->
+    <!-- Footer Bottom End -->
 </footer>
+
+<style>
+    .site-footer {
+        clear: both;
+    }
+
+    .footer-top-area {
+        background-color: #141414;
+        padding: 50px 0;
+        color: #a7a7a7;
+    }
+
+    .footer-top-area a {
+        color: #a7a7a7;
+        text-decoration: none;
+    }
+
+    .footer-top-area a:hover {
+        color: #eb0028;
+    }
+
+    .footer-wiz h3 {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .footer-wiz h3:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        background-color: #eb0028;
+        left: 0;
+        bottom: -10px;
+        width: 40px;
+    }
+
+    .footer-wiz ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-wiz ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-wiz ul li a:hover {
+        color: #eb0028;
+    }
+
+    .newsletter {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .newsletter .news-input {
+        padding: 15px;
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        background-color: #252525;
+        color: #a7a7a7;
+    }
+
+    .newsletter .news-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50px;
+        border: none;
+        background-color: #eb0028;
+        color: #fff;
+        border-radius: 0 3px 3px 0;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .social-icons a {
+        margin-right: 10px;
+        color: #a7a7a7;
+        font-size: 18px;
+    }
+
+    .social-icons a:hover {
+        color: #eb0028;
+    }
+
+    .footer-bottom-area {
+        background-color: #181818;
+        color: #a7a7a7;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 20px 0;
+    }
+
+    .footer-bottom-area a {
+        color: #eb0028;
+    }
+
+    .footer-bottom-area a:hover {
+        color: #fff;
+    }
+</style>
+
 <!-- Footer end -->
 </div>
 <!-- Main Wrapper end -->
